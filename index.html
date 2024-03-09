@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto de Joel Barragán</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F3F3F3;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #00E9C6;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #fff;
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+    }
+    .button {
+      background-color: #00E9C6;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #009B8B;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proyecto de Joel Barragán</h1>
+  </header>
+  <section>
+    <h2>Introducción</h2>
+    <p>En esta página web presento mi proyecto personal donde abordo el monitoreo y gestión inteligente del recurso hídrico en nuestra comunidad.</p>
+  </section>
+  <section>
+    <h2>Implementación de tecnologías emergentes</h2>
+    <button class="button" onclick="toggle('tecnologias')">Mostrar detalles</button>
+    <div id="tecnologias" style="display: none;">
+      <p>He empleado las siguientes herramientas tecnológicas:</p>
+      <ul>
+        <li>Tecnología 1: Sensores IoT (Internet de las cosas) para monitorear en tiempo real el consumo y calidad del agua.</li>
+        <li>Tecnología 2: Sistemas de telemetría para la detección temprana de fugas y pérdidas.</li>
+	<li>Tecnología 3: Plataformas de gestión de datos en la nube para analizar y visualizar la información recopilada.</li>
+      </ul>
+      <p>Las ventajas de utilizar estas tecnologías son:</p>
+      <ul>
+        <li>Ventaja 1: Una mayor eficiencia en la detección de problemas.</li>
+        <li>Ventaja 2: Optimización en la gestión de recursos.</li>
+	<li>Ventaja 3: Toma de decisiones basadas en datos.</li>
+      </ul>
+      <p>Las desventajas de utilizar estas tecnologías son:</p>
+      <ul>
+        <li>Desventaja 1: Necesidad de capacitación técnica.</li>
+        <li>Desventaja 2: Inversión inicial en infraestructura tecnológica.</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <h2>Reflexión sobre el desarrollo del proyecto</h2>
+    <p>Lo que más se me dificultó fue la integración de las distintas tecnologías y la adaptación a las necesidades específicas de la comunidad.</p>
+    <p>Mis logros durante el desarrollo del proyecto fueron establecer alianzas estratégicas con expertos en tecnología y organizaciones locales, lo cual facilitó la implementación y maximizó el impacto del proyecto. Además, conseguimos mejorar la eficiencia del sistema de gestión del agua en un 30%, reduciendo significativamente las pérdidas y promoviendo un uso más responsable del recurso hídrico. Esto me llena de satisfacción y me motiva a seguir trabajando en soluciones innovadoras para el beneficio de nuestra comunidad.</p>
+  </section>
+  <section>
+    <h2>Secciones de la página Web</h2>
+    <button class="button" onclick="toggle('secciones')">Mostrar secciones</button>
+    <div id="secciones" style="display: none;">
+      <p>Aquí presento las diferentes secciones de mi página web:</p>
+      <ul>
+        <li>Sección 1: Introducción. Descripción del propósito del proyecto.</li>
+        <li>Sección 2: Implementación de Tecnologías Emergentes utilizadas y sus ventajas y desventajas.</li>
+        <li>Sección 3: Reflexión sobre el desarrollo del proyecto con mis dificultades y logros.</li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    function toggle(elementId) {
+      var element = document.getElementById(elementId);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
